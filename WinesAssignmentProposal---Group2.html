@@ -1832,11 +1832,56 @@ used to design a pricing model for producers to rely on.</p>
 <h2>How Do We Hope to Address the Business Question?</h2>
 <ol style="list-style-type: decimal">
 <li><p><strong>Question 1:</strong> Conduct clustering and segmentation
-analysis to identify different good quality wine families. A family is
-defined as a set of unique phsyiochemical properties.</p></li>
+analysis to identify different good quality wine families. Here, a
+family is defined as a set of unique phsyiochemical properties.</p></li>
 <li><p><strong>Question 2:</strong> Utilize different supervised
 learning techniques to construct a model that estimates a wine’s quality
-based on a set of phsyiochemical properties.</p></li>
+based on a set of phsyiochemical properties. Here, models will look at
+identifying variable importance too.</p></li>
+</ol>
+<p>In light of the above analysis, the intent is to create the following
+use cases:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Market Analysis:</strong> The approach pursued in Question 1
+will allow us to construct a set of “ideal” physchiochemical properties
+for producers to target. A producer with a low quality wine keen to
+increase the attractiveness of their wine may decide to alter some
+physiochemical properties to reach this “ideal” zone. This market
+analysis may also allow producers to have a better sense of areas where
+competition is limited (good quality wines with a given set of
+physiochemical properties and few competitors), and hence that are worth
+targeting.</li>
+</ol>
+In theory, the value of this market analysis could be quantified
+empirically. A wine producer who has a wine with a quality rating of 4
+and who successfully raises the wine quality to 5 by changing some
+physiochemical properties may quantify the return in the following way:
+<center>
+<strong>(Profit at Wine Rating of 5) - (Profit at Wine Rating of 4) -
+(Cost of Change in Physiochemical Properties)</strong>
+</center>
+<p>Naturally, the above assumes that a producer would obtain a higher
+profit from a higher quality wine. This higher profit may be a result of
+the producer: a) selling more wine, b) managing to raise the price of
+the wine due to its higher quality or c) doing both. The above also
+assumes that a jump in quality rating is indeed possible by altering
+physiochemical properties only.</p>
+<ol start="2" style="list-style-type: decimal">
+<li><p><strong>Supporting Producers Ahead of Certification:</strong>
+Winemakers regularly have to ask oenologists to test and certify the
+quality of their wines. Having a model at hand that allows producers to
+understand an estimated quality rating of their wine ahead of
+certification may allow producers to tweak their physiochemical
+properties to obtain a higher rating and a better product. More
+specifically, this model may be used by producers in a laboratory
+environment where producers may input the test results in a function and
+automatically get an estimate of their quality rating. Following this
+estimate, producers may work to change the properties of their wine by,
+for instance, altering the fermentation or adding sulphites.</p></li>
+<li><p><strong>Support the Oenological Community:</strong> A model that
+assigns a quality rating based on a set of physiochemical properties may
+also prove useful to oenologists, who will be able to have a second
+opinion on their subjective taste.</p></li>
 </ol>
 </div>
 <div id="understanding-the-data" class="section level2">

@@ -52,15 +52,29 @@ This project aims to answer two questions crucial to wine producers:
 
 1. **What physiochemical qualities should one target to produce what is typically deemed a good quality wine?** Are there are any different combinations of properties that make a good quality wine?
 
-2. **How does one estimate the likely quality of their wine based on laboratory testing?** A wine's physiochemical properties are typically identified at a certification stage. Here, an oenologist will also conduct a subjective assessment of quality based on taste. Estimating the likely quality score ahead of time can be a useful risk management tool for a producer ahead of certification. 
+2. **How does one estimate the likely quality of their wine based on laboratory testing?** A wine's physiochemical properties are typically identified at a certification stage. Here, an oenologist will also conduct a subjective assessment of quality based on taste. Estimating the likely quality score ahead of time can be a useful risk management tool for a producer ahead of certification.
 
 **Further Analysis:** This dataset focuses specifically on the Vinho Verde wines and results may not be generalized to other wine types. Nonetheless, this project also aims to provide a framework for future research in other wine types. Furthermore, due to privacy reasons the data currently does not include information on producers, grape types used or prices. Further studies in this field may look to enrich the dataset to include this information. Prices may prove particularly valuable given specific physiochemical properties may be used to design a pricing model for producers to rely on.
 
 ## How Do We Hope to Address the Business Question?
 
-1) **Question 1:** Conduct clustering and segmentation analysis to identify different good quality wine families. A family is defined as a set of unique phsyiochemical properties.
+1) **Question 1:** Conduct clustering and segmentation analysis to identify different good quality wine families. Here, a family is defined as a set of unique phsyiochemical properties.
 
-2) **Question 2:** Utilize different supervised learning techniques to construct a model that estimates a wine's quality based on a set of phsyiochemical properties. 
+2) **Question 2:** Utilize different supervised learning techniques to construct a model that estimates a wine's quality based on a set of phsyiochemical properties. Here, models will look at identifying variable importance too.
+
+In light of the above analysis, the intent is to create the following use cases:
+
+1. **Market Analysis:** The approach pursued in Question 1 will allow us to construct a set of "ideal" physchiochemical properties for producers to target. A producer with a low quality wine keen to increase the attractiveness of their wine may decide to alter some physiochemical properties to reach this "ideal" zone. This market analysis may also allow producers to have a better sense of areas where competition is limited (good quality wines with a given set of physiochemical properties and few competitors), and hence that are worth targeting.
+
+In theory, the value of this market analysis could be quantified empirically. A wine producer who has a wine with a quality rating of 4 and who successfully raises the wine quality to 5 by changing some physiochemical properties may quantify the return in the following way:
+<center>
+**(Profit at Wine Rating of 5) - (Profit at Wine Rating of 4) - (Cost of Change in Physiochemical Properties)**
+</center>
+Naturally, the above assumes that a producer would obtain a higher profit from a higher quality wine. This higher profit may be a result of the producer: a) selling more wine, b) managing to raise the price of the wine due to its higher quality or c) doing both. The above also assumes that a jump in quality rating is indeed possible by altering physiochemical properties only.
+
+2. **Supporting Producers Ahead of Certification:** Winemakers regularly have to ask oenologists to test and certify the quality of their wines. Having a model at hand that allows producers to understand an estimated quality rating of their wine ahead of certification may allow producers to tweak their physiochemical properties to obtain a higher rating and a better product. More specifically, this model may be used by producers in a laboratory environment where producers may input the test results in a function and automatically get an estimate of their quality rating. Following this estimate, producers may work to change the properties of their wine by, for instance, altering the fermentation or adding sulphites.
+
+3. **Support the Oenological Community:** A model that assigns a quality rating based on a set of physiochemical properties may also prove useful to oenologists, who will be able to have a second opinion on their subjective taste.
 
 ## Understanding the Data
 
